@@ -8,7 +8,12 @@
 		"name": "Levy van der Valk"
 	},
 	"keywords": [
-		
+		"surrealdb",
+		"javascript",
+		"typescript",
+		"schema",
+		"validation",
+		"type"
 	],
 	"type": "module",
 	"files": [
