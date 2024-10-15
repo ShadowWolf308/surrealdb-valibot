@@ -39,8 +39,8 @@ export function RangeSchema<Beg  extends BaseSchema<unknown, unknown, BaseIssue<
 			(v) => v instanceof Range,
 			"Value is not a valid Range",
 		),
-		check((v) => safeParse(getBoundSchema(v.beg, begValueSchema), v.beg).success, "Beg value of Range is not valid"),
-		check((v) => safeParse(getBoundSchema(v.end, endValueSchema), v.end).success, "End value of Range is not valid"),
+		check((v) => safeParse(getBoundSchema(v.beg, begValueSchema), v.beg?.value).success, "Beg value of Range is not valid"),
+		check((v) => safeParse(getBoundSchema(v.end, endValueSchema), v.end?.value).success, "End value of Range is not valid"),
 	);
 }
 export function BoundIncludedSchema<T extends BaseSchema<unknown, unknown, BaseIssue<unknown>>>(valueSchema: T) {
