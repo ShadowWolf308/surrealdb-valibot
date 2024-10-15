@@ -1,6 +1,6 @@
 {
 	"name": "surrealdb-valibot",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Re-useable valibot schema's for use with SurrealDB sdk",
 	"license": "MIT",
 	"author": {
