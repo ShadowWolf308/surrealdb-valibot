@@ -1,6 +1,6 @@
-<!-- <p align="center">
+<p align="center">
     <img width="300" src="./img/surreal-valibot.svg" />
-</p> -->
+</p>
 
 <h1 align="center">surrealdb-valibot</h1>
 <p align="center">
