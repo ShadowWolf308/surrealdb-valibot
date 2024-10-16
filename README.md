@@ -8,7 +8,7 @@
 <a href="https://github.com/ShadowWolf308"><img src="https://img.shields.io/badge/created%20by-@ShadowWolf308 -45c724.svg" alt="Created by Levy van der Valk"></a>
 <a href="https://www.npmjs.com/package/surrealdb-valibot" rel="nofollow"><img src="https://img.shields.io/npm/dw/surrealdb-valibot
 " alt="npm"></a>
-<a href="https://github.com/ShadowWolf308/surrealdb-valibot" rel="nofollow"><img src="https://img.shields.io/github/stars/ShadowWolf308/surrealdb-valibot" alt="stars"></a>
+<a href="https://github.com/ShadowWolf308/surrealdb-valibot" rel="nofollow"><img src="https://img.shields.io/github/stars/ShadowWolf308/surrealdb-valibot?style=flat" alt="stars"></a>
 </p>
 <p align="center">Re-useable <a href="https://www.npmjs.com/package/valibot">valibot</a> schema's for use with <a href="https://www.npmjs.com/package/surrealdb">SurrealDB sdk</a>.</p>
 
