@@ -13,19 +13,20 @@
 		"typescript",
 		"schema",
 		"validation",
-		"type"
+		"type",
+		"valibot"
 	],
 	"type": "module",
 	"files": [
 		"dist"
 	],
-	"main": "dist/surrealdbValibot.umd.js",
+	"main": "dist/surrealdbValibot.cjs",
 	"module": "dist/surrealdbValibot.js",
 	"types": "dist/index.d.ts",
 	"exports": {
 		"types": "./dist/index.d.ts",
 		"import": "./dist/surrealdbValibot.js",
-		"require": "./dist/surrealdbValibot.umd.js"
+		"require": "./dist/surrealdbValibot.cjs"
 	},
 	"repository": {
 		"type": "git",
@@ -33,21 +34,21 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build && tsup ./lib/index.ts --dts --dts-only",
+		"compile": "tsc && vite build",
 		"preview": "vite preview",
-		"production": "pnpm build && pnpm publish"
+		"production": "bun compile && npm publish",
+		"lint": "biome check . --formatter-enabled=false",
+		"lint:apply": "biome check . --formatter-enabled=false --write",
+		"lint:apply:unsafe": "biome check . --formatter-enabled=false --write --unsafe"
 	},
 	"peerDependencies": {
 		"surrealdb": "^1.0.6",
 		"valibot": "^0.42.1"
 	},
-	"dependencies": {
-		"surrealdb": "^1.0.6",
-		"valibot": "^0.42.1"
-	},
 	"devDependencies": {
-		"tsup": "^6.5.0",
-		"typescript": "^5.4.5",
-		"vite": "^5.2.12"
+		"@biomejs/biome": "2.4.6",
+		"typescript": "^5.9.2",
+		"vite": "^7.0.6",
+		"vite-plugin-dts": "^4.5.4"
 	}
 }
