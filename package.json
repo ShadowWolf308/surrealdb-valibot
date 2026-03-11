@@ -42,8 +42,8 @@
 		"lint:apply:unsafe": "biome check . --formatter-enabled=false --write --unsafe"
 	},
 	"peerDependencies": {
-		"surrealdb": "^1.0.6",
-		"valibot": "^0.42.1"
+		"surrealdb": "^2.0.0",
+		"valibot": "^1.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.6",

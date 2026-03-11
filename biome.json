@@ -1,0 +1,45 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 120,
+		"attributePosition": "multiline",
+		"useEditorconfig": true
+	},
+	"javascript": {
+		"formatter": {
+			"attributePosition": "multiline"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"domains": {
+			"project": "recommended"
+		},
+		"rules": {
+			"recommended": true,
+			"style": {
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": {
+						"syntax": "shorthand"
+					}
+				}
+			},
+			"correctness": {
+				"noUnusedVariables": {
+					"level": "error",
+					"options": {
+						"ignoreRestSiblings": true
+					}
+				}
+			},
+			"nursery": {
+				"recommended": true
+			}
+		}
+	},
+	"files": {
+		"includes": ["**", "!**/node_modules", "!**/dist", "!**/.vscode", "!**/.vite", "!**/*.js"]
+	}
+}
